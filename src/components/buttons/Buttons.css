@@ -1,0 +1,25 @@
+#Buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+#Buttons > #Button {
+    flex: 1;
+    max-width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    #Buttons {
+        gap: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    #Buttons > #Button {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+}

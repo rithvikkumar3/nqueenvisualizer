@@ -1,0 +1,30 @@
+#Queen {
+    height: 60px; /* Height of the Queen container */
+    width: 60px; /* Width of the Queen container */
+    margin-right: -0.5rem; /* Adjust spacing if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Circular container */
+    background-color: var(--background-color); /* Background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform var(--animation-delay) ease-in-out, box-shadow var(--animation-delay) ease-in-out, background-color var(--animation-delay) ease-in-out;
+}
+
+#Queen img {
+    height: 50px; /* Size of the Queen image */
+    width: 50px; /* Size of the Queen image */
+    border-radius: 50%; /* Circular image */
+    transition: transform var(--animation-delay) ease-in-out, filter var(--animation-delay) ease-in-out;
+}
+
+#Queen:hover {
+    transform: scale(1.1); /* Slightly larger on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+    background-color: #f0f0f0; /* Subtle background color change on hover */
+}
+
+#Queen img:hover {
+    transform: rotate(15deg); /* More rotation for the image on hover */
+    filter: brightness(1.2); /* Slight brightness increase on hover */
+}

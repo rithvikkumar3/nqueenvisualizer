@@ -1,0 +1,33 @@
+#Button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--accent-color);
+    border-radius: 8px;
+    font-size: var(--medium-font-size);
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color var(--animation-delay) ease-in-out, transform var(--animation-delay) ease-in-out;
+}
+
+#Button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+#Button:active {
+    background-color: var(--primary-color);
+    transform: translateY(1px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Button:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+#Button:disabled {
+    background-color: var(--unselected-color);
+    cursor: not-allowed;
+    opacity: 0.7;
+}

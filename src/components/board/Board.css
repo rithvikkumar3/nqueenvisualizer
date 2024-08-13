@@ -1,0 +1,31 @@
+#Board {
+    display: grid;
+    place-items: center;
+    width: min-content;
+    height: min-content;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 1rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform var(--animation-delay) ease-in-out, box-shadow var(--animation-delay) ease-in-out;
+}
+
+#Board:active {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 1;
+    box-sizing: content-box;
+    outline: max(100vh, 100vw) solid rgba(0, 0, 0, 0.3);
+    border: 10px solid #cccccc;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    background-color: #b2ebf2; /* Slightly darker blue on active */
+}
+
+@media screen and (min-width: 768px) {
+    #Board:active {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}

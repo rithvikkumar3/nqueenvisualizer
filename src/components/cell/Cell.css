@@ -1,0 +1,30 @@
+#cell {
+    display: grid;
+    place-items: center;
+    height: 30px; /* Reduced height */
+    width: 30px; /* Reduced width */
+    border: 1px solid var(--border-color);
+    background-color: var(--accent-color);
+    transition: background-color var(--animation-delay) ease-in-out;
+}
+
+#cell:hover {
+    background-color: #e0e0e0;
+}
+
+.queen {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.queen img {
+    height: 20px; /* Reduced height */
+    width: 20px; /* Reduced width */
+    transition: transform var(--animation-delay) ease-in-out;
+}
+
+.queen img:hover {
+    transform: scale(1.1);
+}
